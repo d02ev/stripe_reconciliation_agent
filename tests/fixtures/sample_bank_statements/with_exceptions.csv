@@ -1,0 +1,8 @@
+date,description,amount,balance
+2026-03-01,Stripe payout,4847.23,12847.23
+2026-03-08,Stripe payout,3102.17,15949.40
+2026-03-14,Stripe payout,1200.00,14500.00
+2026-03-22,Stripe payout,2891.44,16340.84
+2026-03-29,Stripe payout,4103.28,20444.12
+2026-03-15,Rent payment,-2500.00,13449.40
+2026-03-20,Stripe random,-800.00,13000.00

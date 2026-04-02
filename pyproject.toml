@@ -8,16 +8,21 @@ dependencies = [
     "stripe>=8.0.0",
     "fastapi>=0.110.0",
     "pydantic>=2.6.0",
+    "pydantic-settings>=2.0.0",
     "python-dotenv>=1.0.0",
     "rich>=13.7.0",
+    "click>=8.0.0",
     "pytest>=8.0.0",
 ]
 
 [project.scripts]
 stripe-recon = "stripe_recon.main:main"
 
-[tool.uv]
-dev-dependencies = []
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.0.0",
+]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/stripe_recon"]

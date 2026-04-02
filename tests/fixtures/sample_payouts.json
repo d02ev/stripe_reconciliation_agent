@@ -1,0 +1,118 @@
+{
+  "payouts": [
+    {
+      "id": "po_test_001",
+      "amount": 484723,
+      "currency": "usd",
+      "status": "paid",
+      "arrival_date": 1709304000,
+      "created": 1709200000,
+      "description": "Payout to bank account",
+      "balance_transaction": "txn_test_001"
+    },
+    {
+      "id": "po_test_002",
+      "amount": 310217,
+      "currency": "usd",
+      "status": "paid",
+      "arrival_date": 1709908800,
+      "created": 1709800000,
+      "description": "Payout to bank account",
+      "balance_transaction": "txn_test_002"
+    }
+  ],
+  "balance_transactions": {
+    "po_test_001": [
+      {
+        "id": "txn_charge_001",
+        "amount": 10000,
+        "fee": 320,
+        "net": 9680,
+        "currency": "usd",
+        "type": "charge",
+        "reporting_category": "charge",
+        "created": 1709100000,
+        "source": "ch_001"
+      },
+      {
+        "id": "txn_charge_002",
+        "amount": 25000,
+        "fee": 905,
+        "net": 24095,
+        "currency": "usd",
+        "type": "charge",
+        "reporting_category": "charge",
+        "created": 1709120000,
+        "source": "ch_002"
+      },
+      {
+        "id": "txn_charge_003",
+        "amount": 5000,
+        "fee": 175,
+        "net": 4825,
+        "currency": "usd",
+        "type": "charge",
+        "reporting_category": "charge",
+        "created": 1709150000,
+        "source": "ch_003"
+      },
+      {
+        "id": "txn_charge_004",
+        "amount": 20000,
+        "fee": 620,
+        "net": 19380,
+        "currency": "usd",
+        "type": "charge",
+        "reporting_category": "charge",
+        "created": 1709180000,
+        "source": "ch_004"
+      },
+      {
+        "id": "txn_charge_005",
+        "amount": 34000,
+        "fee": 1016,
+        "net": 32984,
+        "currency": "usd",
+        "type": "charge",
+        "reporting_category": "charge",
+        "created": 1709190000,
+        "source": "ch_005"
+      }
+    ],
+    "po_test_002": [
+      {
+        "id": "txn_charge_006",
+        "amount": 15000,
+        "fee": 470,
+        "net": 14530,
+        "currency": "usd",
+        "type": "charge",
+        "reporting_category": "charge",
+        "created": 1709700000,
+        "source": "ch_006"
+      },
+      {
+        "id": "txn_charge_007",
+        "amount": 8000,
+        "fee": 290,
+        "net": 7710,
+        "currency": "usd",
+        "type": "charge",
+        "reporting_category": "charge",
+        "created": 1709720000,
+        "source": "ch_007"
+      },
+      {
+        "id": "txn_refund_001",
+        "amount": -5000,
+        "fee": 0,
+        "net": -5000,
+        "currency": "usd",
+        "type": "refund",
+        "reporting_category": "refund",
+        "created": 1709750000,
+        "source": "ch_007"
+      }
+    ]
+  }
+}
