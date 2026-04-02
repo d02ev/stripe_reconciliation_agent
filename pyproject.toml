@@ -1,0 +1,27 @@
+[project]
+name = "stripe-reconciliation-engine"
+version = "0.1.0"
+description = "Stripe Reconciliation Agent — A CLI tool that automatically reconciles Stripe payouts with bank statements, detects failures, and generates human-readable reports"
+readme = "README.md"
+requires-python = ">=3.14.2"
+dependencies = [
+    "stripe>=8.0.0",
+    "fastapi>=0.110.0",
+    "pydantic>=2.6.0",
+    "python-dotenv>=1.0.0",
+    "rich>=13.7.0",
+    "pytest>=8.0.0",
+]
+
+[project.scripts]
+stripe-recon = "stripe_recon.main:main"
+
+[tool.uv]
+dev-dependencies = []
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/stripe_recon"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
