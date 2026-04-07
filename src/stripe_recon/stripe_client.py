@@ -83,7 +83,7 @@ class StripeClient:
         created_before: Optional[datetime] = None,
         status: Optional[str] = None,
     ) -> list[Payout]:
-        params = {"limit": 100}
+        params: dict = {"limit": 100, "created": {}}
 
         if created_after:
             params["created"]["gte"] = int(created_after.timestamp())
